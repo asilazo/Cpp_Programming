@@ -60,6 +60,12 @@ double jaro_Winkler(string s1, string s2);
 // Driver code
 int main()
 {
+    /* To do
+
+        1. Reimplement the driver code to take a harsh table as input
+    */
+
+   
     string s1 = "TRATE", s2 = "TRACE";
  
     // Print Jaro-Winkler Similarity of two strings
@@ -94,6 +100,13 @@ double jaro_distance(string s1, string s2)
     // keep count of matches
     int match = 0;
 
+    /* To do
+
+        1. A harsh table implementation
+        2. Initialization
+    */
+
+
     // Hash for matches
     int hash_s1[s1.length()] = { 0} ,
         hash_s2[s1.length()] = { 0 };
@@ -101,6 +114,8 @@ double jaro_distance(string s1, string s2)
     // Traverse through the first string
     for (int i = 0; i < len1; i++)
     {
+        
+
         // Check if there is any matches
         for (int j = max(0, i - maxDist);
              j < min(len2, i + maxDist + 1); j++)
