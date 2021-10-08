@@ -13,6 +13,13 @@ Examples:
 */
 
 
+/* 
+
+Separate implementaion of the Jaro Similarity.
+Implementation not complete.
+
+*/
+
 # include <bits/stdc++.h>
 #include <string>
 
